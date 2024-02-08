@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Facilities">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/w101image2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/gradient_overlay" />
+
+            <TextView
+                android:id="@+id/topname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sample"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="20dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"/>
+
+            <Button
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="end"
+                android:text="マップを開く" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"/>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!-- ここに概要タブの内容を追加 -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="この施設につけられているタグ ▼"
+                            android:textSize="16dp"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:textColor="#888888"
+                            android:background="#EEEEEE" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginVertical="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/tag1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TextView"
+                                        android:textSize="20dp"
+                                        app:backgroundTint="#ff8c00" />
+                                    <Button
+                                        android:id="@+id/tag2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TextView"
+                                        android:textSize="20dp"
+                                        app:backgroundTint="#ff8c00" />
+                                    <Button
+                                        android:id="@+id/tag3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TextView"
+                                        android:textSize="20dp"
+                                        app:backgroundTint="#ff8c00" />
+                                    <Button
+                                        android:id="@+id/tag4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TextView"
+                                        android:textSize="20dp"
+                                        app:backgroundTint="#ff8c00" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/addtag"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="42dp"
+                                        android:text="追加する"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="3dp"
+                                        android:background="@drawable/dotted_border"
+                                        app:backgroundTint="@null" />
+                                    <Button
+                                        android:id="@+id/tag5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TextView"
+                                        android:textSize="20dp"
+                                        app:backgroundTint="#ff8c00" />
+                                    <Button
+                                        android:id="@+id/tag6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TextView"
+                                        android:textSize="20dp"
+                                        app:backgroundTint="#ff8c00" />
+                                    <Button
+                                        android:id="@+id/tag7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="TextView"
+                                        android:textSize="20dp"
+                                        app:backgroundTint="#ff8c00" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="施設情報 ▼"
+                            android:textSize="16dp"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:textColor="#888888"
+                            android:background="#EEEEEE" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/seat" />
+                                <TextView
+                                    android:id="@+id/seatinfo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="#304880"
+                                    android:text="席数\nsample"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/clock" />
+                                <TextView
+                                    android:id="@+id/timeinfo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="#304880"
+                                    android:text="利用時間\nsample"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/elec" />
+                                <TextView
+                                    android:id="@+id/elecinfo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="#304880"
+                                    android:text="コンセント\nsample"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/share"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/share" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="45dp"
+                                    android:gravity="center"
+                                    android:textColor="#517EFF"
+                                    android:text="共有する"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="詳細 ▼"
+                            android:textSize="16dp"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:textColor="#888888"
+                            android:background="#EEEEEE" />
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp">
+                            <TextView
+                                android:id="@+id/detail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="詳細"
+                                android:textColor="#000000"
+                                android:textSize="16dp"
+                                android:padding="20dp" />
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <!-- ここにアクティビティタブの内容を追加 -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="この施設に関連のあるお知らせ ▼"
+                            android:textSize="16dp"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:textColor="#888888"
+                            android:background="#EEEEEE" />
+
+                        <LinearLayout
+                            android:id="@+id/info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="#FFFFFF"
+                                android:paddingLeft="30dp"
+                                android:paddingRight="30dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"/>
+
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="18dp"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="20dp" />
+
+                            <TextView
+                                android:id="@+id/time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textColor="@android:color/darker_gray"
+                                android:gravity="right"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SNSの投稿 ▼"
+                            android:textSize="16dp"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:textColor="#888888"
+                            android:background="#EEEEEE" />
+
+                        <LinearLayout
+                            android:id="@+id/post"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="20dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/freeicon1" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/post_username"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#000000"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold"
+                                        android:text="User Name"/>
+                                    <TextView
+                                        android:id="@+id/post_time"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#888888"
+                                        android:textSize="16dp"
+                                        android:paddingLeft="20dp"
+                                        android:text="2分"/>
+
+                                </LinearLayout>
+                                <TextView
+                                    android:id="@+id/post_content"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:textSize="18dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Content\nContent\nContent\nContent\nContent\nContent\nContent\nContent"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backImage"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/backwhite" />
+
+    <include layout="@layout/common_layout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

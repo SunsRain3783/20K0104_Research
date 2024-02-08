@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nishi_1f_2">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/nishi1f2" />
+
+    <ImageView
+        android:id="@+id/usericon"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575"
+        app:srcCompat="@drawable/usericon" />
+
+    <Button
+        android:id="@+id/buttonTo1fJoho"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="←情報科学部"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Button
+        android:id="@+id/buttonMuseum"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="ミュージアム小金井"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473">
+
+        <Button
+            android:id="@+id/button6f"
+            android:layout_width="88dp"
+            android:layout_height="40dp"
+            android:text="6F" />
+
+        <Button
+            android:id="@+id/button5f"
+            android:layout_width="88dp"
+            android:layout_height="40dp"
+            android:text="5F" />
+
+        <Button
+            android:id="@+id/button4f"
+            android:layout_width="88dp"
+            android:layout_height="40dp"
+            android:text="4F" />
+
+        <Button
+            android:id="@+id/button3f"
+            android:layout_width="88dp"
+            android:layout_height="40dp"
+            android:text="3F" />
+
+        <Button
+            android:id="@+id/button2f"
+            android:layout_width="88dp"
+            android:layout_height="40dp"
+            android:text="2F" />
+
+        <Button
+            android:id="@+id/button1f"
+            android:layout_width="88dp"
+            android:layout_height="40dp"
+            android:text="1F" />
+
+        <Button
+            android:id="@+id/buttonb1"
+            android:layout_width="88dp"
+            android:layout_height="40dp"
+            android:text="B1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="西館 -1F- 理工学部"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonGLounge"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="学生ラウンジ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <Button
+        android:id="@+id/buttonGBC"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="GBC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <Button
+        android:id="@+id/buttonAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="視聴覚室"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <include layout="@layout/common_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

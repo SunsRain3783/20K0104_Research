@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        app:srcCompat="@drawable/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
+
+        <ImageButton
+            android:id="@+id/mapIcon"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:background="@drawable/image_button_bg"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/mapicon" />
+
+        <ImageButton
+            android:id="@+id/searchIcon"
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:background="@drawable/image_button_bg"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/searchicon" />
+
+        <ImageButton
+            android:id="@+id/snsIcon"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingHorizontal="12dp"
+            android:background="@drawable/image_button_bg"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/snsicon2" />
+
+        <ImageButton
+            android:id="@+id/infoIcon"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/image_button_bg"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/infoicon" />
+
+        <ImageButton
+            android:id="@+id/mypageIcon"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/image_button_bg"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/mypageicon" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UniVerse"
+        tools:targetApi="31">
+        <activity
+            android:name=".ReplyMapLink"
+            android:exported="false" />
+        <activity
+            android:name=".ReplyUpload"
+            android:exported="false" />
+        <activity
+            android:name=".minami_1f"
+            android:exported="false" />
+        <activity
+            android:name=".TimeTable2"
+            android:exported="false" />
+        <activity
+            android:name=".ClassDetail"
+            android:exported="false" />
+        <activity
+            android:name=".QustionChat"
+            android:exported="false" />
+        <activity
+            android:name=".Question"
+            android:exported="false" />
+        <activity
+            android:name=".SyllabusDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Syllabus"
+            android:exported="false" />
+        <activity
+            android:name=".Work"
+            android:exported="false" />
+        <activity
+            android:name=".Text"
+            android:exported="false" />
+        <activity
+            android:name=".TimeTable"
+            android:exported="false" />
+        <activity
+            android:name=".GroupChat"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".GroupDetail"
+            android:exported="false" />
+        <activity
+            android:name=".FeedMapLink"
+            android:exported="false" />
+        <activity
+            android:name=".FeedUpload"
+            android:exported="false" />
+        <activity
+            android:name=".FeedDetail"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MypageTop"
+            android:exported="false" />
+        <activity
+            android:name=".FeedTop"
+            android:exported="false" />
+        <activity
+            android:name=".Facilities"
+            android:exported="false" />
+        <activity
+            android:name=".kanri_3f"
+            android:exported="false" />
+        <activity
+            android:name=".kanri_2f"
+            android:exported="false" />
+        <activity
+            android:name=".higashi_b1"
+            android:exported="false" />
+        <activity
+            android:name=".higashi_1f"
+            android:exported="false" />
+        <activity
+            android:name=".nishi_2f_2"
+            android:exported="false" />
+        <activity
+            android:name=".InformationDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Information"
+            android:exported="false" />
+        <activity
+            android:name=".SearchResult"
+            android:exported="false" />
+        <activity
+            android:name=".Search"
+            android:exported="false" />
+        <activity
+            android:name=".nishi_1f_2"
+            android:exported="false" />
+        <activity
+            android:name=".nishi_3f"
+            android:exported="false" />
+        <activity
+            android:name=".nishi_2f"
+            android:exported="false" />
+        <activity
+            android:name=".nishi_1f"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
